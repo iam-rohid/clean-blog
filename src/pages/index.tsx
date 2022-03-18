@@ -8,6 +8,7 @@ import PostGrid from "@/components/PostGrid";
 import BlogCard from "@/components/BlogCard";
 import SectionWithTitle from "@/components/SectionWithTitle";
 import SnippetCard from "@/components/SnippetCard";
+import { SITE_NAME } from "@/constants";
 
 type Props = {
   featuredBlogs: Blog[];
@@ -18,7 +19,7 @@ type Props = {
 const HomePage: FC<Props> = ({ recentBlogs, featuredBlogs, snippets }) => {
   return (
     <Page
-      title={"DevIsAwesome - Best platform to learn programming"}
+      title={`${SITE_NAME} - Best platform to learn programming`}
       suffix={false}
     >
       <Container>

@@ -10,6 +10,7 @@ import { useTheme } from "@/context/ThemeContext";
 import { menu } from "@/data";
 import { useRouter } from "next/router";
 import { Menu, MenuItem } from "@/types";
+import { SITE_NAME } from "@/constants";
 
 type Props = {};
 const NavBar: FC<Props> = () => {
@@ -17,7 +18,7 @@ const NavBar: FC<Props> = () => {
   return (
     <nav className="sticky top-0 left-0 right-0 z-30 h-14 w-full flex flex-row gap-8 backdrop-blur-md bg-white/70 dark:bg-gray-900/70 items-center px-4 md:px-8 border-b border-gray-100 dark:border-gray-800">
       <Link href="/">
-        <a className="text-xl font-medium">devisawesome</a>
+        <a className="text-xl font-medium">{SITE_NAME}</a>
       </Link>
 
       <ul className="flex-1 flex flex-row gap-6 items-center">
