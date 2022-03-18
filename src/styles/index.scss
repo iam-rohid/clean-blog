@@ -1,0 +1,10 @@
+@import "./dark-theme";
+@import "./light-theme";
+
+.dark {
+  color-scheme: dark;
+}
+
+pre code {
+  display: inline-block;
+}

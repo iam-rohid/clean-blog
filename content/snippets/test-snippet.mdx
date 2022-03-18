@@ -1,0 +1,20 @@
+---
+private: false
+title: Test Snippet
+description: React is a single-page application. It has only one single index.html file. Vercel doesn't redirect all routes to index.html. For this, you can get a 404 error. Here's how to fix it
+date: 2022-03-17
+authors: [test-user]
+tags: ["tag-1"]
+---
+
+React is a single-page application. It has only one single `index.html` file. Vercel doesn't redirect all routes to `index.html`. For this, you can get a 404 error. Here's how to fix it
+
+At the root of your React project create a `vercel.json` file and add this to point all routes towards index.html.
+
+```json filename="vercel.json"
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
+```
+
+After this redeploy your code to vercel and everything should work fine.
