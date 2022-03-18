@@ -1,10 +1,5 @@
-import { BlogMeta, SnippetMeta } from "@/types";
-import {
-  getAllBlogSlugs,
-  getAllSnippetSlugs,
-  getBlogFromSlug,
-  getSnippetFromSlug,
-} from "@/utils";
+import { SnippetMeta } from "@/types";
+import { getAllSnippetSlugs, getSnippetFromSlug } from "@/utils";
 import { GetStaticPaths, GetStaticProps } from "next";
 import React, { FC } from "react";
 import { serialize } from "next-mdx-remote/serialize";
