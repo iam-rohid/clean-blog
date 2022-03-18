@@ -1,1 +1,1 @@
-# devisawesome.com
+# Clean Blog Template
