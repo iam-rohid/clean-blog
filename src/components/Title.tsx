@@ -1,3 +1,4 @@
+import { SITE_NAME } from "@/constants";
 import Head from "next/head";
 import { ReactNode, useMemo } from "react";
 
@@ -11,7 +12,7 @@ export function Title({
   let title = useMemo(
     () =>
       children +
-      (suffix === true ? " - DevIsAwesome" : suffix ? ` - ${suffix}` : ""),
+      (suffix === true ? ` - ${SITE_NAME}` : suffix ? ` - ${suffix}` : ""),
     [suffix, children]
   );
 
